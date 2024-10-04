@@ -1,8 +1,9 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.842);
   margin: 0;
   padding: 0;
+  color: #f0f4f8; /* Improved text color contrast */
 }
 
 h1,
@@ -68,4 +69,18 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+}
+
+/* Skip Link Styles */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 0.5rem;
+  z-index: 1000;
 }
